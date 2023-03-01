@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+    <style>
+      body {
+        background-image: url("https://static.vecteezy.com/system/resources/previews/002/203/921/non_2x/empty-square-neon-background-free-vector.jpg");
+        backdrop-filter: blur(6px);  
+        
+    }
+      .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        justify-content: center;
+        width: 100%;
+        
+        padding: 10px;
+      }
+
+      .formcontent {
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+       
+        backdrop-filter: blur(211px);  
+        padding: 10px;
+        width: 90%;
+        max-width: 450px;
+        position: relative;
+        
+        padding: 20px;
+        -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <SCRIPT  language=JavaScript> 
+      function go(){
+      
+      if (document.form.password.value=='12345' && document.form.login.value=='USUARIO'){ 
+        
+        window.location.href = "https://github.com/AngelesDenisseServin/AngelesDenisseServin.github.io.git";
+          } 
+          else{ 
+               alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+          } 
+      } 
+      </SCRIPT> 
+    <div class="wrapper">
+        <div class="formcontent">
+        <form name="form" action="Login.html">
+            <div >
+              
+                <center><h2>Bienvenido</h2></center>
+                <div class="row">
+                  <label for="user"  class="form-label">Usuario</label
+                    
+                  >
+                  <input
+                  type="text"
+                    class="form-control"
+                    
+                    name="login"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="row">
+                  <label for="exampleInputPassword1" class="fw-bold"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="password"
+                   
+                  />
+                </div>
+                <br />
+                <div class="row">
+                  <input type=button value=Ingresar class="btn btn-primary" onclick=go() >
+                  
+                </div>
+              </div>
+            
+          </form>
+        </div>
+    </div>
+  </body>
+</html>
